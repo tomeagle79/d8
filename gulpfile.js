@@ -44,7 +44,7 @@ gulp.task("sass", function() {
 gulp.task("uglify", function() {
   gulp
     .src("./themes/custom/tomd8/lib/*.js")
-    .pipe(uglify("main.js"))
+    .pipe(uglify("minified.js"))
     .pipe(gulp.dest("./themes/custom/tomd8/js"));
 });
 
